@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+div {
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+p {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
