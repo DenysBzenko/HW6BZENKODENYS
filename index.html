@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>
+    <title>Reverse String & NASA API</title>
     <link rel="stylesheet" href="/Users/tanyapopovich/wbhw6/HW6BZENKODENYS/style/index.css">
 </head>
 <body>
 
-<input type="text" id="inputString">
-<button onclick="handleInput()">Прийняти</button>
-<div id="reversedString"></div>
-
-<img id="nasaImage" style="width: 300px; border: 1px solid black;" src="" alt="NASA Image of the Day">
-<p id="nasaDescription"></p>
-
 <div class="container">
-    <button onclick="validRequest()">Valid Request</button>
-    <p id="validResponse"></p>
+    <h1>Reverse String</h1>
+    <input type="text" id="inputString" placeholder="Enter your string">
+    <button onclick="handleInput()">revers</button>
+    <div id="reversedString"></div>
 
-    <button onclick="invalidRequest()">Invalid Request</button>
+    <h2>NASA Image of the Day</h2>
+    <img id="nasaImage" style="width: 300px; border: 1px solid black;" src="" alt="NASA Image of the Day">
+    <p id="nasaDescription"></p>
+
+    <div class="date-buttons">
+    </div>
+
+    <h2>GitHub Profile</h2>
+    <div class="button-container">
+        <button onclick="validRequest()">Valid Request</button>
+        <button onclick="invalidRequest()">Invalid Request</button>
+    </div>
+    <p id="validResponse"></p>
     <p id="invalidResponse"></p>
 </div>
 

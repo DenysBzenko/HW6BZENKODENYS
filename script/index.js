@@ -12,8 +12,9 @@ for (let i = 1; i <= 30; i++) {
     const button = document.createElement('button');
     button.innerText = `2023-09-${String(i).padStart(2, '0')}`;
     button.addEventListener('click', () => fetchData(i));
-    document.body.appendChild(button);
+    document.querySelector('.date-buttons').appendChild(button);
 }
+
 
 const API_KEY = 'PFFGWtzvCKNZuXgU9he1K6GoaaFv1N6IoD5Dd1hz'; 
 
@@ -41,7 +42,7 @@ function displayError(error) {
     const descriptionElement = document.getElementById('nasaDescription');
 
     imageElement.src = '';
-    descriptionElement.innerText = 'Помилка при завантаженні даних. Будь ласка, спробуйте пізніше.';
+    descriptionElement.innerText = 'error';
 }
 function validRequest() {
     const xhr = new XMLHttpRequest();
