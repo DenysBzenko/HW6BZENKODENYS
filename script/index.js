@@ -4,9 +4,12 @@ function reverseString(str) {
 
 function handleInput() {
     const inputValue = document.getElementById('inputString').value;
-    const reversed = reverseString(inputValue);
-    document.getElementById('reversedString').innerText = reversed;
+    setTimeout(() => {
+        const reversed = reverseString(inputValue);
+        document.getElementById('reversedString').innerText = reversed;
+    }, 1000); 
 }
+
 
 for (let i = 1; i <= 30; i++) {
     const button = document.createElement('button');
